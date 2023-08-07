@@ -14,7 +14,9 @@
     />
     <link rel="stylesheet" href="./main.css" />
   </head>
-  <body class="bg-[#181719] px-3 md:px-[76px] pt-5 md:pt-[42px] h-[2000px]">
+  <body
+    class="bg-[#181719] px-3 md:px-[76px] pt-5 md:pt-[42px] h-screen flex flex-col justify-between"
+  >
     <header>
       <nav class="flex justify-between items-center">
         <div class="flex items-center justify-between max-md:w-full">
@@ -48,6 +50,34 @@
         </ul>
       </nav>
     </header>
+
+    <main class="">
+      <section class="flex justify-between">
+        <div class="text-white">
+          <h2 class="font-lora text-[48px] font-medium">Modern Interior</h2>
+          <p class="font-montserrat text-[24px] mt-[40px]">
+            A full-service residential & <br />
+            commercial interior design and <br />staging comfany offering
+            <br />professional organizing & <br />
+            eco-services
+          </p>
+          <button
+            class="mt-[48px] font-montserrat text-lg font-bold flex items-center gap-3"
+            type=""
+          >
+            Read more
+            <i class="material-icons-sharp text-[24px]">trending_flat</i>
+          </button>
+        </div>
+        <div class="w-1/2">
+          <img class="w-full" src="./demo_photo.png" alt="" />
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <h2>footer</h2>
+    </footer>
 
     <script>
       let menu = () => {
