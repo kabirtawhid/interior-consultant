@@ -4,27 +4,75 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/icon?family=Material+Icons"
+    />
+    <link
+      href="https://fonts.googleapis.com/css?family=Material+Icons|Material+Icons+Outlined|Material+Icons+Two+Tone|Material+Icons+Round|Material+Icons+Sharp"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="./main.css" />
   </head>
-  <body class="bg-[#181719] px-[76px] pt-[42px]">
+  <body class="bg-[#181719] px-3 md:px-[76px] pt-5 md:pt-[42px] h-[2000px]">
     <header>
       <nav class="flex justify-between items-center">
-        <div class="flex">
+        <div class="flex items-center justify-between max-md:w-full">
           <h3
             class="font-crimson-pro text-white text-sm font-extralight border border-white border-solid p-2"
           >
             THIS INTERIOR
           </h3>
-          <div class="md:hidden">Menu</div>
+          <button onclick="menu();" id="menu" class="md:hidden z-10">
+            <i
+              id="icon-open"
+              class="material-icons-sharp text-[38px] text-white"
+              >menu</i
+            >
+            <i
+              id="icon-close"
+              class="material-icons-sharp text-[38px] text-white hidden fixed right-3 top-[20px]"
+              >close</i
+            >
+          </button>
         </div>
 
-        <ul class="flex gap-16">
-          <li class="menu">Home</li>
-          <li class="menu">Collection</li>
-          <li class="menu">About</li>
-          <li class="menu">Contact</li>
+        <ul
+          id="nav"
+          class="flex max-md:flex-col max-md:gap-8 max-md:h-screen max-md:w-0 max-md:justify-center max-md:items-center top-0 left-0 gap-16 max-md:fixed max-md:bg-[#181719] transition-all duration-500 overflow-hidden"
+        >
+          <li class="menu"><a href="">Home</a></li>
+          <li class="menu"><a href="">Collection</a></li>
+          <li class="menu"><a href="">About</a></li>
+          <li class="menu"><a href="">Contact</a></li>
         </ul>
       </nav>
     </header>
+
+    <script>
+      let menu = () => {
+        let nav = document.getElementById("nav").classList;
+        let icon_open = document.getElementById("icon-open").classList;
+        let icon_close = document.getElementById("icon-close").classList;
+
+        if (nav.contains("open")) {
+          nav.remove("open");
+          nav.remove("max-md:w-100");
+          nav.add("max-md:w-0");
+          nav.remove("max-md:opacity-100");
+          nav.add("max-md:opacity-0");
+          icon_open.remove("hidden");
+          icon_close.add("hidden");
+        } else {
+          nav.add("open");
+          nav.remove("max-md:w-0");
+          nav.add("max-md:w-screen");
+          nav.remove("max-md:opacity-0");
+          nav.add("max-md:opacity-100");
+          icon_open.add("hidden");
+          icon_close.remove("hidden");
+        }
+      };
+    </script>
   </body>
 </html>
