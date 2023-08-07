@@ -5,4 +5,7 @@
 @tailwind utilities;
 
 @layer components {
+  .menu {
+    @apply font-montserrat text-lg font-medium text-white hover:font-bold hover:underline decoration-white decoration-2 underline-offset-8;
+  }
 }
