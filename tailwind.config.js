@@ -7,7 +7,12 @@ module.exports = {
       "crimson-pro": ["Crimson Pro"],
       lora: ["Lora"],
     },
-    extend: {},
+    extend: {
+      screens: {
+        "2lg": "1100px",
+        tall: { raw: "(min-height: 700px)" },
+      },
+    },
   },
   plugins: [],
 };
