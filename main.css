@@ -6,6 +6,6 @@
 
 @layer components {
   .menu {
-    @apply font-montserrat text-lg font-medium text-white hover:font-bold hover:underline decoration-white decoration-2 underline-offset-8;
+    @apply font-montserrat text-base font-medium text-white hover:font-bold md:overflow-visible hover:underline hover:underline-offset-8 hover:decoration-white decoration-2;
   }
 }

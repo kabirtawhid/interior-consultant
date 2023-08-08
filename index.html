@@ -15,7 +15,7 @@
     <link rel="stylesheet" href="./main.css" />
   </head>
   <body
-    class="bg-[#181719] px-3 md:px-[76px] pt-5 md:pt-[42px] h-screen flex flex-col justify-between"
+    class="bg-[#181719] px-3 lg:px-[40px] pt-5 lg:pt-[25px] lg:h-screen lg:min-h-[670px] lg:max-h-[900px] flex flex-col justify-between"
   >
     <header>
       <nav class="flex justify-between items-center">
@@ -41,9 +41,9 @@
 
         <ul
           id="nav"
-          class="flex max-md:flex-col max-md:gap-8 max-md:h-screen max-md:w-0 max-md:justify-center max-md:items-center top-0 left-0 gap-16 max-md:fixed max-md:bg-[#181719] transition-all duration-500 overflow-hidden"
+          class="flex max-md:flex-col max-md:gap-8 gap-12 max-md:h-screen max-md:w-0 max-md:justify-center max-md:items-center top-0 left-0 max-md:fixed max-md:bg-[#181719] transition-all duration-500 max-md:overflow-hidden"
         >
-          <li class="menu"><a href="">Home</a></li>
+          <li class="menu"><a class="menu" href="">Home</a></li>
           <li class="menu"><a href="">Collection</a></li>
           <li class="menu"><a href="">About</a></li>
           <li class="menu"><a href="">Contact</a></li>
@@ -52,43 +52,43 @@
     </header>
 
     <main class="">
-      <section class="flex justify-between">
+      <section class="flex justify-between items-center">
         <div class="text-white">
-          <h2 class="font-lora text-[48px] font-medium">Modern Interior</h2>
-          <p class="font-montserrat text-[24px] mt-[40px]">
+          <h2 class="font-lora lg:text-[30px] font-medium">Modern Interior</h2>
+          <p class="font-montserrat lg:text-[16px] mt-[20px]">
             A full-service residential & <br />
             commercial interior design and <br />staging comfany offering
             <br />professional organizing & <br />
             eco-services
           </p>
           <button
-            class="mt-[48px] font-montserrat text-lg font-bold flex items-center gap-3"
+            class="lg:mt-[18px] font-montserrat lg:text-sm font-bold flex items-center gap-3"
             type=""
           >
             Read more
             <i class="material-icons-sharp text-[24px]">trending_flat</i>
           </button>
         </div>
-        <div class="w-1/2 relative">
-          <img class="w-full" src="./demo_photo.png" alt="" />
+        <div class="w-[520px] relative">
+          <img class="w-full h-full" src="./demo_photo.png" alt="" />
 
           <div
-            class="bg-[#181719] shadow-[0_4px_4px_0_rgba(0,0,0,.25)] w-[400px] p-6 absolute bottom-[-110px] right-[30px]"
+            class="bg-[#181719] shadow-[0_4px_4px_0_rgba(0,0,0,.25)] w-[60%] p-4 absolute bottom-[-70px] right-[30px]"
           >
             <div class="flex items-center gap-3">
-              <img class="rounded-full h-[45px]" src="./photo2.png" alt="" />
+              <img class="rounded-full h-[40px]" src="./photo2.png" alt="" />
               <div>
                 <h3 class="text-white font-montserrat text-sm font-medium">
                   Aliza Webber
                 </h3>
                 <h4
-                  class="mt-1 text-[#828282] font-montserrat text-[12px] font-medium"
+                  class="mt-0 text-[#828282] font-montserrat text-[12px] font-medium"
                 >
                   Interior Designer
                 </h4>
               </div>
             </div>
-            <h3 class="font-lora text-2xl font-bold text-white mt-6">
+            <h3 class="font-lora text-base font-bold text-white mt-2">
               Designed in 2020 by <br />
               Aliza Webber
             </h3>
@@ -98,7 +98,7 @@
     </main>
 
     <footer>
-      <h2 class="text-sm text-[#a9a9a9] text-center pb-[20px]">
+      <h2 class="text-sm text-[#a9a9a9] text-center pb-[10px]">
         created by
         <b
           ><a href="https://github.com/kabirtawhid" class="hover:text-white"
